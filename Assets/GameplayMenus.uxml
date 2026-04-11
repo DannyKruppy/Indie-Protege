@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/IndieProtegeUSSFile.uss?fileID=7433441132597879392&amp;guid=f47a67555a635ad4eae608891f0c890d&amp;type=3#IndieProtegeUSSFile"/>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column;">
+        <ui:Button text="Button"/>
+        <ui:Button text="Button"/>
+        <ui:Button text="Button"/>
+    </ui:VisualElement>
+</ui:UXML>
