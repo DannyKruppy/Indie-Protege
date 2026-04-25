@@ -667,9 +667,9 @@ public class GameBootstrap : MonoBehaviour
         int chosenMoney = 1;
 
         TextMeshProUGUI skillLabel = AddText(panel.transform, StatNames[0] + " (current: " + GetStatByIndex(0) + ")", 280, 24, accentColor);
-        TextMeshProUGUI yearsLabel = AddText(panel.transform, "Time: 1 Year (x1.0)", 140, 22);
-        TextMeshProUGUI moneyLabel = AddText(panel.transform, "Cost: $1000", 60, 22);
-        TextMeshProUGUI previewLabel = AddText(panel.transform, "Result: ~1 skill points", 0, 24, profitColor);
+        TextMeshProUGUI yearsLabel = AddText(panel.transform, "Time: 1 Year (x1.0)", 150, 22);
+        TextMeshProUGUI moneyLabel = AddText(panel.transform, "Cost: $1000", -50, 22);
+        TextMeshProUGUI previewLabel = AddText(panel.transform, "Result: ~1 skill points", -200, 24, profitColor);
 
         // Skill selection
         for (int i = 0; i < 5; i++)
@@ -680,7 +680,7 @@ public class GameBootstrap : MonoBehaviour
                 chosenSkill = idx;
                 skillLabel.text = StatNames[idx] + " (current: " + GetStatByIndex(idx) + ")";
                 UpdatePreview();
-            }, 110, 40);
+            }, 125, 40);
         }
 
         // Years
@@ -702,7 +702,7 @@ public class GameBootstrap : MonoBehaviour
             int mu = m;
             int cost = CalculateInvestCost(m);
             if (cost > money) break;
-            AddSmallButton(panel.transform, "$" + cost, -200 + (m - 1) * 100, 10, () =>
+            AddSmallButton(panel.transform, "$" + cost, -100 + (m - 1) * 100, 10, () =>
             {
                 chosenMoney = mu;
                 moneyLabel.text = "Cost: $" + CalculateInvestCost(mu);
