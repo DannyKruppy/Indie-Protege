@@ -4754,10 +4754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sfxSource: {fileID: 0}
   musicSource: {fileID: 0}
-  buttonClick: {fileID: 0}
-  gameResult: {fileID: 0}
-  retirementSound: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  buttonClick: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
+  gameResult: {fileID: 8300000, guid: f3f518d7c226641da86630eb8a52b3b1, type: 3}
+  retirementSound: {fileID: 8300000, guid: 03412a8f229a9415caafabb2faccc4f3, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: e2111c6ced833a545afe6586558531a2, type: 3}
 --- !u!4 &486688555
 Transform:
   m_ObjectHideFlags: 0
